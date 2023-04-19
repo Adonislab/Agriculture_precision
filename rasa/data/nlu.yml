@@ -1,0 +1,109 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Bonjour
+    - Salut
+    - Coucou
+    - Hello
+    - Hi
+    - Hey
+    - Bonsoir
+    - Bonne nuit
+    - Allo
+    - Comment vas-tu ?
+    - Comment allez-vous ?
+    - Ça va ?
+    - Salutations
+    - Bienvenue
+
+- intent: greet_return
+  examples: |
+    - Je vais à merveille
+    - Ca peut aller
+    - Je vais olympiquement bien
+    - Je vais bien
+    - Ca ira
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - bon par
+    - cee you later
+    - bonne nuit
+    - bye
+    - au revoir
+    - Bonne journée
+    - à bientôt
+    - bye bye
+    - à plus tard
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - oui
+    - y
+    - en effet
+    - bien sûr
+    - ça sonne bien
+    - correct
+
+- intent: deny
+  examples: |
+    - non
+    - jamais
+    - Je ne pense pas
+    - je n'aime pas ça
+    - pas du tout
+    - pas vraiment
+
+- intent: mood_great
+  examples: |
+    - parfait
+    - excellent
+    - incroyable
+    - se sentir comme un roi
+    - magnifique
+    - Je me sens très bien
+    - Je suis formidable
+    - Je suis incroyable
+    - Je vais sauver le monde
+    - super content
+    - extrêmement bien
+    - si parfait
+    - si bon
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - Ma journée a été horrible
+    - je suis triste
+    - Je ne me sens pas très bien
+    - je suis déçu(e)
+    - super triste
+    - Je suis tellement triste
+    - triste
+    - très triste
+    - malheureux
+    - pas bien
+    - mal
+    - pas très bien
+    - extrêmement triste
+    - si triste
+  
+    
+- intent: bot_challenge
+  examples: |
+    - Que sais tu fais ?
+    - En quoi peux tu m'aider 
+    - On dit quoi 
+    - Quoi de neuf 
+    - êtes-vous un robot ?
+    - Êtes-vous un humain ?
+    - Est-ce que je parle à un robot ?
+    - Est-ce que je parle à un humain ?

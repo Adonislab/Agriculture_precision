@@ -1,0 +1,42 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - greet_return
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  
+
+responses:
+  utter_greet:
+  - text: "Bonjour, Comment allez-vous ?"
+  - text: "Mes salutations, Comment allez-vous ?"
+
+  utter_greet_return:
+  - text: "Je vais olympiquement bien. En quoi puis-je vous aidez ?"
+
+  utter_cheer_up:
+  - text: "Je suis vraiment désolé, voici de quoi vous remonter le moral :"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "J'espère que cela sera d'une grande aide pour vous"
+
+  utter_happy:
+  - text: "Formidable, je partage votre joie"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Au revoir"
+  - text: "Ah Bientot"
+
+  utter_iamabot:
+  - text: "Je suis un agent agronome numérique. Je vous aide dans votre quotidien pour améliorer vos rendements agricoles."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
