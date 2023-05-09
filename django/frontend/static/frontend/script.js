@@ -134,8 +134,8 @@ $("#sendButton").on("click", function(e) {
 })
 
 //==================================== Set user response =====================================
-function setUserResponse(message) {
-    var UserResponse = '<img class="userAvatar" src=' + "{% static 'bot/img/userAvatar.jpg' %}" + '><p class="userMsg">' + message + ' </p><div class="clearfix"></div>';
+function setUserResponse(message) { 
+    var UserResponse = '<img class="userAvatar" src="./static/img/userAvatar.jpg"/> <p class="userMsg">' + message + ' </p><div class="clearfix"></div>';
     $(UserResponse).appendTo(".chats").show("slow");
 
     $(".usrInput").val("");
@@ -211,7 +211,7 @@ function setBotResponse(response) {
 
                 //check if the response contains "text"
                 if (response[i].hasOwnProperty("text")) {
-                    var BotResponse = '<img class="botAvatar" src=".static/img/sara_avatar.png"/> <p class="botMsg">' + response[i].text + '</p><div class="clearfix"></div>';
+                    var BotResponse = '<img class="botAvatar" src="./static/img/sara_avatar.png"/> <p class="botMsg">' + response[i].text + '</p><div class="clearfix"></div>';
                     $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
                 }
 

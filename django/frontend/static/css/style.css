@@ -407,7 +407,7 @@ div.content_data::-webkit-scrollbar {
 
 .menuChips {
     display: block;
-    background: #2c53af;
+    background: green;
     color: #fff;
     text-align: center;
     padding: 5px;

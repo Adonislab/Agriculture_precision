@@ -9,7 +9,43 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - agriculture
+  - elevage
+  - pêche
+  - agronome
+  - demander_temperature
+  - demander_temperature_jour
+  - demander_temperature_semaine
+  - demander_temperature_ville
+  - demander_temperature_jour_ville
+  - demander_temperature_semaine_ville
+
+
+actions:
+  - action_temperature
   
+entities:  
+  - localisation
+  - date
+  - domaine
+
+slots:
+  localisation:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: localisation
+  date:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: date
+  domaine:
+    type: text 
+    mappings:
+      - type: from_entity
+        entity: domaine
+
 
 responses:
   utter_greet:
@@ -17,7 +53,7 @@ responses:
   - text: "Mes salutations, Comment allez-vous ?"
 
   utter_greet_return:
-  - text: "Je vais olympiquement bien. En quoi puis-je vous aidez ?"
+  - text: "Je vais olympiquement bien.En quoi puis-je vous aidez ?"
 
   utter_cheer_up:
   - text: "Je suis vraiment désolé, voici de quoi vous remonter le moral :"
@@ -35,8 +71,25 @@ responses:
   - text: "Ah Bientot"
 
   utter_iamabot:
-  - text: "Je suis un agent agronome numérique. Je vous aide dans votre quotidien pour améliorer vos rendements agricoles."
+  - text: "Je suis un agent agronome numérique. Je vous aide dans votre quotidien pour améliorer vos rendements agricoles. Je vous aide dans les domaines ci-dessous :"
+    buttons:
+      - title: "Agriculture"
+        payload: /agriculture
+      - title: "Elevage"
+        payload: "elevage"
+      - title: "Pêche"
+        payload: /pêche
+      - title: "Discutez avec un agronome"
+        payload: /agronome"
 
+  utter_peche:
+  - text: "La peche"    
+  utter_agriculture:
+  - text: "Agriculture"  
+  utter_elevage:
+  - text: "Elevage"
+  utter_agronome:
+  - text: "Agrome"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

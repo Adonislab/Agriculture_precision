@@ -11,3 +11,28 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Say Agriculture
+  steps:
+  - intent: agriculture
+  - action: utter_agriculture
+
+- rule: Say Elevage
+  steps:
+  - intent: elevage
+  - action: utter_elevage
+
+- rule: Say Peche
+  steps:
+  - intent: pêche
+  - action: utter_peche
+
+- rule: Say Expert
+  steps:
+  - intent: agronome 
+  - action: utter_agronome 
+
+- rule: Demander la temperature au Bénin
+  steps:
+    - intent: demander_temperature
+    - action: action_temperature

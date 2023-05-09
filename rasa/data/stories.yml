@@ -19,6 +19,49 @@ stories:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- story: agriculture
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet_return
+  - action: utter_greet_return
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: agriculture
+  - action: utter_agriculture
+
+- story: elevage
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet_return
+  - action: utter_greet_return
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: elevage
+  - action: utter_elevage
+
+- story: peche
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet_return
+  - action: utter_greet_return
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: pêche
+  - action: utter_peche
+
+- story: agronome
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet_return
+  - action: utter_greet_return
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: agronome 
+  - action: utter_agronome 
 
 
 - story: happy path
@@ -45,5 +88,18 @@ stories:
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: meteo
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: demander_temperature
+  - action: action_temperature
   - intent: deny
   - action: utter_goodbye

@@ -92,6 +92,7 @@ nlu:
     - malheureux
     - pas bien
     - mal
+    - Je vais mal
     - pas très bien
     - extrêmement triste
     - si triste
@@ -100,6 +101,7 @@ nlu:
 - intent: bot_challenge
   examples: |
     - Que sais tu fais ?
+    - Aide 
     - En quoi peux tu m'aider 
     - On dit quoi 
     - Quoi de neuf 
@@ -107,3 +109,97 @@ nlu:
     - Êtes-vous un humain ?
     - Est-ce que je parle à un robot ?
     - Est-ce que je parle à un humain ?
+
+- intent: agriculture
+  examples: |
+      - Obtenir des informations sur la culture d'une plante particulière
+      - Agriculture
+      - Demander des conseils pour lutter contre une maladie des plantes
+      - Agriculture de précision 
+      - Demander des recommandations sur les engrais ou les produits de soins pour les plantes
+      - Obtenir des prévisions météorologiques pour planifier les activités agricoles
+      - Demander des conseils pour optimiser le rendement des cultures
+      - Demander des informations sur les tendances du marché pour prendre des décisions commerciales
+      - Obtenir des informations sur les pratiques agricoles durables et écologiques
+
+- intent: elevage
+  examples: |
+    - Demander des conseils sur la santé ou le bien-être des animaux d'élevage
+    - Animaux
+    - Demander des informations sur les différentes races d'animaux d'élevage
+    - Elevage
+    - Demander des informations sur les réglementations en matière d'élevage
+    - Demander des conseils sur l'alimentation et la nutrition des animaux d'élevage
+    - Demander des recommandations sur les pratiques d'élevage durables et écologiques
+    - Demander des informations sur les tendances du marché pour prendre des décisions commerciales
+    - Demander des conseils sur l'équipement et les installations nécessaires pour l'élevage
+
+
+- intent: pêche
+  examples: |
+    - Demander des informations sur les espèces de poissons dans une zone de pêche donnée
+    - pêche
+    - Demander des recommandations pour des appâts ou des leurres pour la pêche
+    - poisson 
+    - Demander des informations sur les réglementations en matière de pêche telles que les quotas ou les zones protégées
+    - Demander des conseils sur les techniques de pêche, comme la pêche à la ligne ou la pêche à la mouche
+    - Demander des recommandations sur les équipements de pêche, comme les cannes à pêche ou les filets
+    - Demander des informations sur les pratiques de pêche durables et écologiques
+    - Demander des informations sur les tendances du marché pour prendre des décisions commerciales
+
+- intent: agronome 
+  examples: |
+    - Je veux parler avec un humain
+    - Discutez avec un agronome
+    - contacter un spécialiste 
+    - Je voudrais parler à un humain
+    - Je ne suis pas sûr que le chatbot puisse m'aider
+    - Je préférerais parler à quelqu'un qui connaît bien l'agriculture
+    - J'ai besoin d'un avis d'expert
+    - Pouvez-vous me mettre en contact avec un spécialiste de l'agriculture ?
+    - J'aimerais discuter de mon cas avec un professionnel
+    - Est-ce que quelqu'un peut m'aider ?
+    - Je ne trouve pas la réponse que je cherche, pouvez-vous m'aider ?
+    - Je suis perdu, avez-vous quelqu'un qui peut m'aiguiller ?
+    - Je suis confronté à un problème spécifique, je pense qu'un expert serait plus approprié pour m'aider
+
+- intent: demander_temperature
+  examples: |
+    - Quel est le temps aujourd'hui à [Cotonou](localisation)?
+    - Donne-moi la météo actuelle [Porto-Novo](localisation).
+    - Comment est la météo actuellement [Abomey-Calavi](localisation) ?
+    - Est-ce qu'il va pleuvoir aujourd'hui [Abomey](localisation) ?
+    - Quelle est la température actuelle [Natingou](localisation) ?
+    - Quel temps fait-il actuellement [Sakete](localisation)?
+    - Quelle est la température aujourd'hui [Porga](localisation) ?
+    - Est-ce qu'il fait chaud [Malenville](localisation) ?
+    - Quel est le degré actuel [Banikouara](localisation) ?
+    - Peux-tu me dire la température [Kandi](localisation) ?
+    - Il fait combien de degrés [Sèmè](localisation)?
+    - J'ai besoin de connaître la température [Parakou](localisation).
+    - Quelle est la température prévue pour demain [Godomey](localisation)?
+    - Quel est le degré d'aujourd'hui [Houéyiho](localisation)?
+
+- intent: demander_temperature_jour
+  examples: |
+    - pas encore
+
+- intent: demander_temperature_semaine
+  examples: |
+    - pas encore
+
+- intent: demander_temperature_ville
+  examples: |
+    - pas encore
+
+- intent: demander_temperature_jour_ville
+  examples: |
+    - pas encore
+
+- intent: demander_temperature_semaine_ville
+  examples: |
+    - pas encore
+
+- intent: generate_calendar
+  examples: |
+    - Imprimer un calendrier 
